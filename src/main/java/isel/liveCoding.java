@@ -17,23 +17,23 @@ public class liveCoding {
 			Repository repository = git.getRepository();
 			
 			/* git log */
-//			Iterable<RevCommit> logs = git.log()
-//                    .call();
-//            int count = 0;
-//            for (RevCommit rev : logs) {
-//                System.out.println(rev.getShortMessage() + ", "+rev);
-//                count++;
-//            }
-//            System.out.println("모든 커밋의 개수는: "+count +"개 입니다.");
+			Iterable<RevCommit> logs = git.log()
+                    .call();
+            int count = 0;
+            for (RevCommit rev : logs) {
+                System.out.println(rev.getShortMessage() + ", "+rev);
+                count++;
+            }
+            System.out.println("모든 커밋의 개수는: "+count +"개 입니다.");
             /*		*/
             
             
             /* add All to index , and commit them*/
-            git.add().addFilepattern(".").call();
-            git.commit()
-            //.setAll(true)
-            .setMessage("Happy ISEL~!")
-            .call();
+//            git.add().addFilepattern(".").call();
+//            git.commit()
+//            //.setAll(true)
+//            .setMessage("Happy ISEL~!")
+//            .call();
             /*		*/
             
             
