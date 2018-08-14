@@ -19,7 +19,7 @@ public class jgitOpen {
 	}
 
 	public jgitOpen(String localURI) throws IOException {
-		Git git = Git.open(new File(localURI));
-		Repository repository = git.getRepository();
+		git = Git.open(new File(localURI));
+		repository = git.getRepository();
 	}
 }
