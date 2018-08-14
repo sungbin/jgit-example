@@ -7,8 +7,8 @@ import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.lib.Repository;
 
 public class jgitOpen {
-	Git git;
-	Repository repository;
+	private Git git;
+	private Repository repository;
 
 	public Git getGit() {
 		return git;
