@@ -8,18 +8,18 @@ import org.eclipse.jgit.lib.Repository;
 
 public class jgitOpen {
 	private Git git;
-	private Repository repository;
 
 	public Git getGit() {
 		return git;
 	}
 
-	public Repository getRepository() {
-		return repository;
-	}
-
+	/**
+	 * help to open local git repository. return Git.
+	 * 
+	 * @param localURI
+	 * @throws IOException
+	 */
 	public jgitOpen(String localURI) throws IOException {
 		git = Git.open(new File(localURI));
-		repository = git.getRepository();
 	}
 }
