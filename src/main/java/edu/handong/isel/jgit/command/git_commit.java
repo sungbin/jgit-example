@@ -29,7 +29,8 @@ public class git_commit {
 			String filePattern = "edu.handong" + File.separator + "isel" + File.separator + "jgit" + File.separator
 					+ "command" + File.separator;
 
-			git.add().addFilepattern(filePattern).call(); // if file match 'filePattern', add it to index/
+			// git.add().addFilepattern(filePattern).call();
+			new git_add(git, filePattern); // if file match 'filePattern', add it to indeZ
 
 			git.commit().setAll(Option_a).setMessage("Add git_commit\nIt is same to git commit <-a> <-m Message>")
 					.call();

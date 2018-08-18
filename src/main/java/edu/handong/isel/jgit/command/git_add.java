@@ -34,7 +34,7 @@ public class git_add {
 		}
 	}
 
-	public static void execute(Git git, String filePattern) {
+	public git_add (Git git, String filePattern) {
 
 		try {
 			git.add().addFilepattern(filePattern).call();
